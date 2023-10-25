@@ -27,5 +27,5 @@ import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
 
 # take the jsonb version of the response and normalize
-fruityvice_normalized = pd.json_normalize(fruitvice_response.json())
+fruityvice_normalized = pd.json_normalize(fruityvice_response.json())
 streamlit.dataframe(fruityvice_normalized)
